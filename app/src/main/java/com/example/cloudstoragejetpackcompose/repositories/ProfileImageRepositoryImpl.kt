@@ -12,8 +12,11 @@ import com.google.firebase.storage.StorageReference
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.tasks.await
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class ProfileImageRepositoryImpl(
+@Singleton
+class ProfileImageRepositoryImpl @Inject constructor(
     private val imagesStorageRed: StorageReference,
     private val imagesCollRef: CollectionReference
 ) : ProfileImageRepository {
