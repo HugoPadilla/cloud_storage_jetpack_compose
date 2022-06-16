@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "442729225912",
+    "project_id": "cloud-storage-jetpack-compose",
+    "storage_bucket": "cloud-storage-jetpack-compose.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442729225912:android:61940f2c2f759fd9f1de4d",
+        "android_client_info": {
+          "package_name": "com.example.cloudstoragejetpackcompose"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442729225912-lf33d8lne5a86il1b0ks9949gpd2kqfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWsny7uBn3ephSA3wqPpDFVfIGG5DKoy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442729225912-lf33d8lne5a86il1b0ks9949gpd2kqfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
