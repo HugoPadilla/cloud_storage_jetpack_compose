@@ -47,11 +47,6 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew app:bundleRelease --stacktrace
 
-  upload:
-    needs: [ build ]
-    name: Upload the signed artifact
-    runs-on: ubuntu-22.04
-    steps:
       - name: Upload Bundle
         uses: actions/upload-artifact@v3
         with:
