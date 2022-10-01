@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.Flow
 interface ProfileImageRepository {
     suspend fun addImageToFirebaseStorage(imageUri: Uri): Flow<Response<Uri>>
 
-    suspend fun addImageToFirestore(downloadUrl: Uri): Flow<Response<Boolean>>
+    suspend fun addImageToCloudFirestore(downloadUrl: Uri): Flow<Response<Boolean>>
 
     suspend fun getImageFromFirestore(): Flow<Response<String>>
 }

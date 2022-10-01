@@ -38,7 +38,7 @@ class ProfileImageViewModel @Inject constructor(
 
     fun addImageToDatabaseState(downloadUrl: Uri) {
         viewModelScope.launch {
-            repo.addImageToFirestore(downloadUrl).collect {
+            repo.addImageToCloudFirestore(downloadUrl).collect {
                 _addImageToDatabaseState.value = it
             }
         }

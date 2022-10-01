@@ -104,6 +104,7 @@ fun ProfileImageScreen(
                     LaunchedEffect(key1 = isImageAddedToDatabase) {
                         showSnackBar()
                     }
+                    viewModel.getImageFromDatabase()
                 }
             }
         }

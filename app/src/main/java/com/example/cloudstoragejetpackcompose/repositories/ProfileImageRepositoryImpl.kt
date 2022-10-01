@@ -35,7 +35,7 @@ class ProfileImageRepositoryImpl @Inject constructor(
         }
     }
 
-    override suspend fun addImageToFirestore(downloadUrl: Uri): Flow<Response<Boolean>> = flow {
+    override suspend fun addImageToCloudFirestore(downloadUrl: Uri): Flow<Response<Boolean>> = flow {
         try {
             emit(Response.Loading)
             imagesCollRef.document(UID).set(
